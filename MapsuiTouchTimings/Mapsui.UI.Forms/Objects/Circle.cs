@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Linq;
 using Xamarin.Forms;
 using System;
+using Brush = Mapsui.Styles.Brush;
 
 namespace Mapsui.UI.Forms
 {
