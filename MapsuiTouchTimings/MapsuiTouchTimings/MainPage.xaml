@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mapsui="clr-namespace:Mapsui.UI.Forms;assembly=Mapsui.UI.Forms" 
+             NavigationPage.HasNavigationBar="false"      
+             Title="RoadBook"
+             WidthRequest="1024"
+             HeightRequest="800"
+             x:Class="MapsuiTouchTimings.MainPage">
+
+    <Grid>
+        
+        <AbsoluteLayout 
+                        AbsoluteLayout.LayoutBounds="0,0,1,1"
+                        AbsoluteLayout.LayoutFlags="All"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="Fill">
+
+            <mapsui:MapView x:Name="MapsuiView"
+                        AbsoluteLayout.LayoutBounds="0,0,1,0.4"
+                        AbsoluteLayout.LayoutFlags="All"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="Gray" />
+
+
+            <Label x:Name="DebugLabel"
+                        Text=""
+                        AbsoluteLayout.LayoutBounds="0,1,1,0.4"
+                        AbsoluteLayout.LayoutFlags="All"                   
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand" />
+
+        </AbsoluteLayout>        
+        
+    </Grid>
+
+</ContentPage>
+
