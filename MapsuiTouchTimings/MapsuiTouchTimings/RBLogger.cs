@@ -19,9 +19,13 @@ namespace RoadBookXF.RBDebugTools
         public void Clear()
         {
             LoggerID++;
-
             startTime = DateTime.Now;
             logText = "";
+        }
+
+        public void SetTimeToZero()
+        {
+            startTime = DateTime.Now;
         }
 
         public void Log(string text)
@@ -30,14 +34,16 @@ namespace RoadBookXF.RBDebugTools
             logText += addTxt;
         }
 
-        public void FlushOnDiagnosticDebug()
+        public void WriteToDiagnosticDebug()
         {
             System.Diagnostics.Debug.Write(logText +"\r\n");
+            logText = "\r\n";
         }
 
-        public void FlushOnLabel(Label label)
+        public void WriteToDebugLabel(Label label)
         {
             label.Text += logText + "\r\n";
+            logText = "\r\n";
         }
     }
 }

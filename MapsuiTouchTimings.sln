@@ -28,6 +28,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Mapsui.UI.Shared", "MapsuiT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mapsui.Rendering.Skia", "MapsuiTouchTimings\Mapsui.Rendering.Skia\Mapsui.Rendering.Skia.csproj", "{9909DA43-334E-4C58-AD7B-C65D26BB7881}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapsuiTouchTimings.MacOs", "MapsuiTouchTimings\MapsuiTouchTimings.MacOs\MapsuiTouchTimings.MacOs.csproj", "{6227BE9F-FCE9-4792-9569-CCD67754EC24}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		MapsuiTouchTimings\Mapsui.UI.Shared\Mapsui.UI.Shared.projitems*{239f2b0d-13cb-4bcf-83bf-f52d696a47b7}*SharedItemsImports = 13
@@ -288,6 +290,30 @@ Global
 		{9909DA43-334E-4C58-AD7B-C65D26BB7881}.Release|x64.Build.0 = Release|Any CPU
 		{9909DA43-334E-4C58-AD7B-C65D26BB7881}.Release|x86.ActiveCfg = Release|Any CPU
 		{9909DA43-334E-4C58-AD7B-C65D26BB7881}.Release|x86.Build.0 = Release|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Debug|ARM.Build.0 = Debug|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Debug|x64.Build.0 = Debug|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Debug|x86.Build.0 = Debug|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Release|ARM.ActiveCfg = Release|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Release|ARM.Build.0 = Release|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Release|iPhone.Build.0 = Release|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Release|x64.ActiveCfg = Release|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Release|x64.Build.0 = Release|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Release|x86.ActiveCfg = Release|Any CPU
+		{6227BE9F-FCE9-4792-9569-CCD67754EC24}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

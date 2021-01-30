@@ -74,9 +74,14 @@ namespace MapsuiTouchTimings
 
                 MapsuiView.Map = Map;
 
+                MapsuiView.UseDoubleTap = false;
+                DoubleTapButton.BackgroundColor = Color.MistyRose;
+                DoubleTapButton.Text = "Enable DoubleTap";
 
-                // exclude  double click numberoftaps == 2
-                MapsuiView.UseDoubleTap = true;
+                RBLayer.IsMapInfoLayer = false;
+                MapInfoButton.BackgroundColor = Color.MistyRose;
+                MapInfoButton.Text = "Enable MapInfo";
+
                 MapsuiView.MapClicked += MapClickedAsync;
 
                 // not working on Android
@@ -123,6 +128,43 @@ namespace MapsuiTouchTimings
         private void SearchTextCompleted(object sender, EventArgs e)
         {
 
+        }
+
+        private void ToggleDoubleTap(object sender, EventArgs e)
+        {
+            if (MapsuiView.UseDoubleTap)
+            {
+                MapsuiView.UseDoubleTap = false;
+                ((Button)sender).BackgroundColor = Color.MistyRose;
+                ((Button)sender).Text = "Enable DoubleTap";
+            }
+            else
+            {
+                MapsuiView.UseDoubleTap = true;
+                ((Button)sender).BackgroundColor = Color.LightGreen;
+                ((Button)sender).Text = "Disable DoubleTap";
+            }
+        }
+
+        private void ToggleMapInfo(object sender, EventArgs e)
+        {
+            if (RBLayer.IsMapInfoLayer)
+            {
+                RBLayer.IsMapInfoLayer = false;
+                ((Button)sender).BackgroundColor = Color.MistyRose;
+                ((Button)sender).Text = "Enable MapInfo";
+            }
+            else
+            {
+                RBLayer.IsMapInfoLayer = true;
+                ((Button)sender).BackgroundColor = Color.LightGreen;
+                ((Button)sender).Text = "Disable MapInfo";
+            }
+        }
+
+        private void ClearLabel(object sender, EventArgs e)
+        {
+            DebugLabel.Text = "";
         }
     }
 }
