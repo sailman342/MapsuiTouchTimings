@@ -1,0 +1,3 @@
+# MapsuiTouchTimings
+
+Small test program to help elaborate the different Mapsui events (Click, Touch, ...) timings ...
